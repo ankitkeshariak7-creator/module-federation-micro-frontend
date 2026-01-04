@@ -1,0 +1,53 @@
+# =====================
+# Node & Package Managers
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =====================
+# Build Outputs
+# =====================
+dist/
+build/
+coverage/
+
+# =====================
+# Webpack / MF artifacts
+# =====================
+*.stats.json
+remoteEntry.js
+*.map
+
+# =====================
+# Environment Files
+# =====================
+.env
+.env.local
+.env.development
+.env.production
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+
+# =====================
+# Cache
+# =====================
+.cache/
+.parcel-cache/

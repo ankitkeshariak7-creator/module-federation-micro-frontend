@@ -1,0 +1,17 @@
+{
+  "name": "mf-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "app/*"
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules packages/*/node_modules app/*/node_modules",
+    "install:all": "npm install",
+    "start": "concurrently \"npm start --workspace packages/shared-ui\" \"npm start --workspace packages/form-designer\" \"npm start --workspace packages/dashboard\" \"npm start --workspace app/shell\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "rimraf": "^5.0.10"
+  }
+}
