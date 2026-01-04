@@ -19,6 +19,14 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          "postcss-loader", // 🔴 required for Tailwind
+        ],
+      },
     ],
   },
 
@@ -36,14 +44,8 @@ module.exports = {
       },
 
       shared: {
-        react: {
-          singleton: true,
-          requiredVersion: false,
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: false,
-        },
+        react: { singleton: true, requiredVersion: false },
+        "react-dom": { singleton: true, requiredVersion: false },
       },
     }),
 

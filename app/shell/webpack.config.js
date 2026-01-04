@@ -19,6 +19,14 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",   // injects CSS to DOM
+          "css-loader",     // translates CSS into CommonJS
+          "postcss-loader", // runs PostCSS (Tailwind, autoprefixer)
+        ],
+      },
     ],
   },
 
