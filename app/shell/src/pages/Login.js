@@ -30,12 +30,11 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
+      <div className="w-full max-w-[400px] bg-white rounded-xl shadow-md p-8">
         <h2 className="text-2xl font-semibold text-center mb-6">
           Login
         </h2>
 
-        {/* Username */}
         <div className="mb-4">
           <input
             type="text"
@@ -46,7 +45,6 @@ export default function Login() {
           />
         </div>
 
-        {/* Password */}
         <div className="mb-4">
           <input
             type="password"
@@ -57,14 +55,12 @@ export default function Login() {
           />
         </div>
 
-        {/* Error Message */}
         {errorMessage && (
           <p className="text-red-500 text-sm mb-4 text-center">
             {errorMessage}
           </p>
         )}
 
-        {/* Login Button */}
         <button
           onClick={handleLogin}
           className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition"
