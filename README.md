@@ -172,7 +172,6 @@ Redux hydrates state from localStorage
 
 ## 🗂 Folder Structure
 
-```text
 workspace/
 │
 ├── app/
@@ -224,7 +223,7 @@ workspace/
 ├── .gitignore
 ├── package.json
 └── README.md
-```
+
 
                  ┌──────────────────┐
                  │      SHELL       │
